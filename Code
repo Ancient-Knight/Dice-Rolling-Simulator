@@ -1,0 +1,50 @@
+from random import shuffle 
+import time
+import random 
+print(' Welcome.     ')
+time.sleep(0.6)
+print(' This program is created in 24 hour.')
+time.sleep(1.2)
+print('  If you find errors in it, please let us know.')
+time.sleep(1.2)
+print('   Thank you.')
+time.sleep(2.0)
+[print('') for i in range(10) for i in range(10) for i in range(10)]
+print('_____|<<<Dice Rolling Simulator>>>|_____')
+time.sleep(1.2)
+[print('') for i in range(2)]
+what = input('Start? (Yes): ')
+time.sleep(0.6) 
+if what == 'Yes':
+ 	print ('Running the program')
+ 	print('')
+Dice = ['one', 'two', 'three', 'four', 'five', 'six',]
+infinity = 0
+while True:
+    choice = int(input("Enter '1': "))
+    shuffle(Dice)
+    if Dice[choice - 1] == 'one':
+        print("Congratulations!You've got the number 1!")
+        [print('') for i in range(2)] 
+    elif Dice[choice - 1] == 'two':
+        print("Congratulations!You've got the number 2!")
+        [print('') for i in range(2)] 
+    elif Dice[choice - 1] == 'three':
+        print("Congratulations!You've got the number 3!")
+        [print('') for i in range(2)] 
+    elif Dice[choice - 1] == 'four':
+        print("Congratulations!You've got the number 4!")
+        [print('') for i in range(2)] 
+    elif Dice[choice - 1] == 'five':
+        print("Congratulations!You've got the number 5!")
+        [print('') for i in range(2)] 
+    elif Dice[choice - 1] == 'six':
+        print("Congratulations!You've got the number 6!")
+        [print('') for i in range(2)] 
+    if infinity == 1:
+        input()
+        break
+else:
+	print('Error')
+	print('Enter correctly')
+input()
